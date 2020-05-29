@@ -1,0 +1,44 @@
+{
+  "name": "jembe",
+  "version": "1.0.0",
+  "description": "everyone gather together in peace",
+  "author": "dashameter",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "lint-staged": {
+    "*.{js,vue}": "npm run lint"
+  },
+  "husky": {
+    "hooks": {
+      "dispre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.11.0",
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "dash": "^3.14.1",
+    "dashmachine-crypto": "^0.5.0",
+    "nuxt": "^2.12.2",
+    "vue-timeago": "^5.1.2",
+    "vuex-persistedstate": "^3.0.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.2",
+    "@nuxtjs/eslint-config": "^3.0.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0",
+    "eslint-plugin-nuxt": ">=1.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "prettier": "^2.0.5",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.9"
+  }
+}
